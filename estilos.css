@@ -1,10 +1,20 @@
 * {
   margin: 0%;
 }
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: rgb(253, 237, 219);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+height: 100vh;
+margin: 0;
+padding: 0;
+align-items: center;
 }
+
 header {
   font-size: medium;
   color: rgb(255, 255, 255);
@@ -100,6 +110,223 @@ footer {
   color: aliceblue;
   font-size: 30px;
   display: none;
+}
+
+.login-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 300px;
+  align-items: center;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 160px); /* Resta el espacio que ocupan header y footer */
+  background-color: rgb(253, 237, 219); /* igual que body */
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  align-items: center;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  background: #06402b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  background: #06402b;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.login-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  color: #06402b;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 35px 10px 35px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-group i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  color: #888;
+}
+
+.input-group .toggle-password {
+  right: 10px;
+  left: auto;
+  cursor: pointer;
+}
+
+.recordarme {
+  margin-bottom: 15px;
+  color: #06402b;
+  font-size: 0.9em;
+}
+
+.recordarme input {
+  margin-right: 8px;
+  transform: scale(1.1);
+}
+
+.login-box button {
+  background-color: #06402b;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.login-box a {
+  color: #06402b;
+  font-size: 0.85em;
+  display: block;
+  margin-top: 10px;
+}
+
+#error-message {
+  color: red;
+  display: none;
+  margin-bottom: 10px;
+}
+
+.slider-contenedor {
+  position: relative; /* Para posicionar los botones dentro */
+  width: 100vw; /* Ancho del viewport */
+  overflow: hidden; /* Oculta el contenido que se sale del contenedor */
+}
+ 
+.slider {
+  display: flex;
+  width: 100%; /* Inicialmente al 100%, se ajustará con JS */
+  scroll-snap-type: x mandatory; /* Activa el "snap" horizontal obligatorio */
+  scroll-behavior: smooth; /* Para el desplazamiento suave controlado por JS */
+}
+ 
+.slide {
+  flex: 0 0 100vw; /* No crecer ni encoger, ancho del viewport */
+  height: 700px; /* Altura deseada para los slides */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: white;
+  background-color: #333; /* Color de fondo predeterminado */
+  scroll-snap-align: start; /* El inicio del slide se alinea con el inicio del contenedor */
+  box-sizing: border-box; /* Incluye padding y border en el ancho */
+}
+
+.slide img {width:100%;}
+ 
+.boton-anterior, .boton-siguiente {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1em;
+  z-index: 10; /* Asegura que los botones estén por encima del slider */
+}
+ 
+.boton-anterior {
+  left: 10px;
+}
+ 
+ 
+.boton-siguiente {
+  right: 10px;
+}
+ 
+ 
+.boton-anterior:disabled, .boton-siguiente:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+ 
+/* Estilos de ejemplo para diferentes cajas */
+.slide:nth-child(1) { background-color: #007bff; }
+.slide:nth-child(2) { background-color: #28a745; }
+.slide:nth-child(3) { background-color: #dc3545; }
+ 
+.boton-anterior, .boton-siguiente {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1em;
+  z-index: 10; /* Asegura que los botones estén por encima del slider */
+}
+ 
+.boton-anterior {
+  left: 10px;
+}
+ 
+ 
+.boton-siguiente {
+  right: 10px;
+}
+ 
+ 
+.boton-anterior:disabled, .boton-siguiente:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 /* tabletas */

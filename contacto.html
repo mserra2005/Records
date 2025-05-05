@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -22,16 +21,35 @@
         <ul>
           <li><a href="productos.html">Productos</a></li>
           <li><a href="contacto.html">Sobre Nosotros</a></li>
-          <li>
-            <a href="productos.html"><img class="carrito" src="BOLSA.png" /></a>
-          </li>
+          <li><a href="login.html">Log In</a></li>
         </ul>
       </nav>
     </header>
+    <div class="slider-contenedor">
+      <div class="slider">
+        <div class="slide"><img src="VINILOS 1.jpg"></div>
+        <div class="slide"><img src="VINILOS 2.jpg"></div>
+        <div class="slide"><img src="VINILOS 3.jpg"></div>
+      </div>
+      <button class="boton-anterior">Anterior</button>
+      <button class="boton-siguiente">Siguiente</button>
+    </div>
     <main class="Contacto">
-      <h2><img src="TEL.png" /> 11 XXXX-XXXX</h2>
-      <h2><img src="MAIL.png" /> masrecords@gmail.com</h2>
-      <h2><img src="UBI.png" />Jean Jaures 932</h2>
+      <section class="sobre-nosotros">
+        <h1>Sobre Nosotros</h1>
+        <p>
+          En <strong>+Records</strong> celebramos el sonido auténtico del vinilo. Somos una tienda especializada en discos de vinilo nuevos y usados, seleccionados cuidadosamente para los verdaderos amantes de la música.
+        </p>
+        <p>
+          Exploramos todos los géneros, hasta ediciones limitadas y rarezas, ofrecemos una colección única que crece día a día. Creemos que la experiencia de escuchar música en vinilo es insustituible: cálida, tangible y profunda.
+        </p>
+        <p>
+          Fundados por melómanos, para melómanos, nuestro objetivo es compartir la pasión por el formato físico y la historia que cada disco trae consigo.
+        </p>
+        <p>
+          ¡Visitá nuestra tienda o explorá nuestro catálogo online y redescubrí el placer de coleccionar música!
+        </p>
+      </section>
     </main>
     <footer>
       <h2>CONTACTO</h2>
@@ -50,6 +68,45 @@
           x.className = "";
         }
       }
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const sliderContenedor = document.querySelector('.slider-contenedor');
+        const slider = document.querySelector('.slider');
+        const slides = document.querySelectorAll('.slide');
+        const botonAnterior = document.querySelector('.boton-anterior');
+        const botonSiguiente = document.querySelector('.boton-siguiente');
+     
+        let indiceActual = 0;
+        const numSlides = slides.length;
+     
+        function actualizarSlider() {
+          slider.style.transform = `translateX(-${indiceActual * 100}vw)`;
+          actualizarBotones();
+        }
+     
+        function actualizarBotones() {
+          botonAnterior.disabled = indiceActual === 0;
+          botonSiguiente.disabled = indiceActual === numSlides - 1;
+        }
+     
+        botonAnterior.addEventListener('click', function() {
+          if (indiceActual > 0) {
+            indiceActual--;
+            actualizarSlider();
+          }
+        });
+     
+        botonSiguiente.addEventListener('click', function() {
+          if (indiceActual < numSlides - 1) {
+            indiceActual++;
+            actualizarSlider();
+          }
+        });
+     
+        // Inicializar el slider
+        actualizarSlider();
+    });
     </script>
   </body>
 </html>
