@@ -295,6 +295,8 @@ footer {
   opacity: 0.5;
   cursor: not-allowed;
 }
+
+
  
 /* Estilos de ejemplo para diferentes cajas */
 .slide:nth-child(1) { background-color: #007bff; }
@@ -364,4 +366,7 @@ footer {
   }
   footer
   {display: block;}
+  
+  .slide
+  {height: auto}
 }
