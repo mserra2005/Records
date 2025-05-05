@@ -255,7 +255,7 @@ footer {
  
 .slide {
   flex: 0 0 100vw; /* No crecer ni encoger, ancho del viewport */
-  height: 700px; /* Altura deseada para los slides */
+  height: 600px; /* Altura deseada para los slides */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -344,6 +344,9 @@ footer {
   }
   footer
   {display: block;}
+
+  .slide
+  {height: auto}
 }
 
 /* celulares */
