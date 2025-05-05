@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>+Productos</title>
+    <meta name="viewport" content="width=devicewidth,initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html"><img class="logo" src="ICON.png" /></a>
+      <a href="#" class="icono" onclick="MiFuncion()">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </a>
+      <nav id="navegador" class="">
+        <ul>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="contacto.html">Sobre Nosotros</a></li>
+          <li>
+            <a href="productos.html"><img class="carrito" src="BOLSA.png" /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="cajacontenedora">
+        <div class="caja">
+          <img src="OLIVIA.png" /><a href="productos.html"></a>
+          <h2>GUTS (spilled)</h2>
+          <h3>Olivia Rodrigo</h3>
+          <h1>US$45.99</h1>
+        </div>
+        <div class="caja">
+          <img src="BILLIE.png" />
+          <h2>HIT ME HARD AND SOFT</h2>
+          <h3>Billie Eilish</h3>
+          <h1>US$33.00</h1>
+        </div>
+        <div class="caja">
+          <img src="CHAPPEL.png" />
+          <h2>The Rise and Fall of a Midwest Princess</h2>
+          <h3>Chappel Roan</h3>
+          <h1>US$34.99</h1>
+        </div>
+        <div class="caja">
+          <img src="TAYLOR.png" />
+          <h2>THE TORTURED POETS DEPARTMENT</h2>
+          <h3>Taylor Swift</h3>
+          <h1>US$34.99</h1>
+        </div>
+        <div class="caja">
+          <img src="SABRINA.png" />
+          <h2>Short n'Sweet (Deluxe)</h2>
+          <h3>Sabrina Carpenter</h3>
+          <h1>US$45.99</h1>
+        </div>
+        <div class="caja">
+          <img src="ARIANA.png" />
+          <h2>eternal sunshine</h2>
+          <h3>Ariana Grande</h3>
+          <h1>US$33.00</h1>
+        </div>
+        
+    </main>
+    <footer>
+      <h2>CONTACTO</h2>
+      <h2><i class="fa fa-whatsapp">+54 9 11 XXXX-XXXX</i></h2>
+      <h2><i class="fa fa-instagram"></i>@masrecords</h2>
+      <h2><i class="fa fa-envelope"></i>masrecords@gmail.com</h2>
+      <h2><i class="fa fa-map-marker"></i>Jean Jaures 932</h2>
+    </footer>
+    <script>
+      function MiFuncion() {
+        var x = document.getElementById("navegador");
+        if (x.className === "") {
+          id = "navegador";
+          x.className += "mostrarmenu";
+        } else {
+          x.className = "";
+        }
+      }
+    </script>
+  </body>
+</html>

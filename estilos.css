@@ -1,0 +1,140 @@
+* {
+  margin: 0%;
+}
+body {
+  background-color: rgb(253, 237, 219);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header {
+  font-size: medium;
+  color: rgb(255, 255, 255);
+  background-color: #06402b;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer {
+  background-color: #06402b;
+  padding: 10px; font-size: small;
+}
+
+nav {
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+nav ul a {
+  color: aliceblue;
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px;
+}
+main {
+  color: aliceblue;
+  text-align: center;
+}
+footer {
+  color: aliceblue; justify-content: space-between; display: flex; font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.logo {
+  width: 200px;
+  display: flex;
+  text-align: left;
+}
+
+.cajacontenedora {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+.caja {
+  width: 31.3%;
+  margin: 1%;
+  color: #06402b;
+  font-size: x-small;
+}
+
+.caja img {
+  width: 100%;
+}
+
+.caja2 {
+  width: 31.3%;
+  margin: 1%;
+  background-color: aliceblue;
+}
+
+.banner {
+  width: 100%;
+}
+
+.carrito {
+  width: 50px;
+  display: flex;
+}
+
+.Contacto {
+  color: #06402b;
+}
+
+.Contacto img {
+  width: 100px;
+  margin: 10px;
+}
+
+.Contacto h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icono {
+  color: aliceblue;
+  font-size: 30px;
+  display: none;
+}
+
+/* tabletas */
+@media (max-width: 1024px) {
+  .caja {
+    width: 50%;
+  }
+  header {
+    display: block;
+  }
+  nav ul {
+    justify-content: center;
+  }
+  footer
+  {display: block;}
+}
+
+/* celulares */
+@media (max-width: 480px) {
+  .caja {
+    width: 100%;
+  }
+  nav ul {
+    display: block;
+    text-align: center;
+  }
+  nav {
+    display: none;
+  }
+  .icono {
+    display: block;
+  }
+  .mostrarmenu {
+    display: block;
+  }
+  footer
+  {display: block;}
+}

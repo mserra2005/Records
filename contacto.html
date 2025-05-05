@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>+Nosotros</title>
+    <meta name="viewport" content="width=devicewidth,initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html"><img class="logo" src="ICON.png" /></a>
+      <a href="#" class="icono" onclick="MiFuncion()">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </a>
+      <nav id="navegador" class="">
+        <ul>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="contacto.html">Sobre Nosotros</a></li>
+          <li>
+            <a href="productos.html"><img class="carrito" src="BOLSA.png" /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="Contacto">
+      <h2><img src="TEL.png" /> 11 XXXX-XXXX</h2>
+      <h2><img src="MAIL.png" /> masrecords@gmail.com</h2>
+      <h2><img src="UBI.png" />Jean Jaures 932</h2>
+    </main>
+    <footer>
+      <h2>CONTACTO</h2>
+      <h2><i class="fa fa-whatsapp">+54 9 11 XXXX-XXXX</i></h2>
+      <h2><i class="fa fa-instagram"></i>@masrecords</h2>
+      <h2><i class="fa fa-envelope"></i>masrecords@gmail.com</h2>
+      <h2><i class="fa fa-map-marker"></i>Jean Jaures 932</h2>
+    </footer>
+    <script>
+      function MiFuncion() {
+        var x = document.getElementById("navegador");
+        if (x.className === "") {
+          id = "navegador";
+          x.className += "mostrarmenu";
+        } else {
+          x.className = "";
+        }
+      }
+    </script>
+  </body>
+</html>
