@@ -29,12 +29,11 @@
     <div class="login-container">
       <div class="login-box">
         <h2>Iniciar Sesión</h2>
-        <form onsubmit="return validarLogin()">
-          <p id="error-message">Usuario o contraseña incorrectos</p>
+        <form id="miFormulario" method="post">
 
           <div class="input-group">
             <i class="fa fa-user"></i>
-            <input type="text" id="usuario" placeholder="Usuario" required />
+            <input type="email" name="Email" placeholder="Email" required />
           </div>
 
           <div class="input-group">
@@ -51,6 +50,12 @@
           <button type="submit">Entrar</button>
           <a href="#">¿Olvidaste tu contraseña?</a>
         </form>
+
+      <script>
+  document.getElementById('miFormulario').addEventListener('submit', function(event) {
+    alert('El inicio de sesión fue exitoso');
+  });
+</script>
       </div>
     </div>
 
@@ -71,27 +76,6 @@
           x.className = "";
         }
       }
-
-      function validarLogin() {
-        const usuario = document.getElementById("usuario").value;
-        const contraseña = document.getElementById("password").value;
-        if (usuario !== "admin" || contraseña !== "1234") {
-          document.getElementById("error-message").style.display = "block";
-          return false;
-        }
-        return true;
-      }
-
-      document.getElementById("togglePassword").addEventListener("click", function () {
-        const passwordInput = document.getElementById("password");
-        if (passwordInput.type === "password") {
-          passwordInput.type = "text";
-          this.className = "fa fa-eye-slash toggle-password";
-        } else {
-          passwordInput.type = "password";
-          this.className = "fa fa-eye toggle-password";
-        }
-      });
     </script>
   </body>
 </html>
