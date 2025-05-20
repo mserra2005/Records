@@ -53,6 +53,7 @@ main {
 footer {
   color: aliceblue; justify-content: space-between; display: flex; font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .logo {
   width: 200px;
   display: flex;
