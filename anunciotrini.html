@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InspirArte - Barra de Anuncios</title>
+  <link rel="stylesheet" href="estilotrini.css" />
+</head>
+<body>
+
+  <div class="contenedor-anuncio">
+    <a href="https://05102006tm.github.io/InspirArte/" class="anuncio-link" target="_blank">
+      <div class="anuncio-contenido">
+        <img src="Logo en negativo.png" alt="Logo InspirArte" class="logo-anuncio" />
+        <div class="mensaje-anuncio" id="mensajeRotativo">
+          Informate sobre los últimos cruces entre moda y arte
+        </div>
+        <div class="btn-anuncio">Ver más</div>
+      </div>
+    </a>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const mensajes = [
+        "Informate sobre los últimos cruces entre moda y arte",
+        "Sumate a nuestra comunidad creativa",
+        "Descubrí las inspiraciones de diseñadores en el arte"
+      ];
+
+      let index = 0;
+      const mensajeEl = document.getElementById("mensajeRotativo");
+
+      function cambiarMensaje() {
+        mensajeEl.style.opacity = 0;
+        setTimeout(() => {
+          index = (index + 1) % mensajes.length;
+          mensajeEl.textContent = mensajes[index];
+          mensajeEl.style.opacity = 1;
+        }, 1000);
+      }
+
+      setInterval(cambiarMensaje, 5000);
+    });
+  </script>
+
+</body>
+</html>
