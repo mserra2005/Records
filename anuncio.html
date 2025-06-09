@@ -61,7 +61,7 @@
           height: 600px;
           max-width: 300px;
           margin: auto;
-          padding: 30px 20px;
+          padding: 20px 10px;
           text-align: center;
         }
 
@@ -69,19 +69,26 @@
           max-height: 100px;
         }
 
-        .anuncio h1 {
-          font-size: 22px;
-          margin: 0;
-          flex: none;
+        .contenido-centro {
+          flex: 1;
           display: flex;
           align-items: center;
           justify-content: center;
-          height: 100%;
+          width: 100%;
+        }
+
+        .anuncio h1 {
+          font-size: 20px;
+          margin: 0;
         }
 
         .boton {
           padding: 14px 24px;
           font-size: 18px;
+        }
+
+        body {
+          overflow: hidden;
         }
       }
     </style>
@@ -90,7 +97,9 @@
   <body>
     <div class="anuncio">
       <img src="ICON.png" alt="Logo" />
-      <h1>10% OFF en tu primera compra</h1>
+      <div class="contenido-centro">
+        <h1>10% OFF en tu primera compra</h1>
+      </div>
       <a
         href="https://mserra2005.github.io/Records/productos.html"
         target="_blank"
