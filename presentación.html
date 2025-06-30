@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Presentación - Serra</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+<style>
+  * {margin: 0; padding: 0; list-style: none;}
+.dm-sans-uniquifier { font-family: Verdana, Geneva, Tahoma, sans-serif; font-optical-sizing: auto; font-weight: 1000px; font-style: normal;}
+body { background-color: rgb(253, 237, 219); color: #484848; font-family: "DM Sans", sans-serif; padding-right: 0;}
+header { color: #06402b;}
+a { color: #484848; text-decoration: none;}
+p { color: #484848;}
+
+/* Primera Slide */
+
+.caja-p1 { width: 100%; height: 100%; border-bottom: solid 1px rgb(253, 237, 219); display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;}
+.logo-p { width: 18%;}
+.logo-p img {width: 100%; height: auto; max-height: 150px; object-fit: contain;}
+.subcaja-p1 { width: 100%; display: flex; justify-content: center; align-items: center; margin-top: 4%;}
+.subcaja-p2 { width: 100%; display: flex; flex-flow: wrap; justify-content: center; color: #06402b; padding-bottom: 5%;}
+.titulo-p1 { font-size: 120px; width: 100%; display: flex; justify-content: center; text-align: center; margin-bottom: 20px;}
+.subcaja-p3 { height: 15%; display: flex; flex-flow: wrap; justify-content: center;}
+.texto-p1 { display: flex; flex-flow: wrap; width: 80%; justify-content: center; font-size: 20px;}
+.contenido-p1 {display: flex; flex-direction: column; align-items: center; gap: 20px; color: #06402b;}
+
+/* Segunda Slide */
+
+.caja-p2 { width: 100%; height: 100%; border-bottom: solid 1px rgb(253, 237, 219); background-color: #06402b; display: flex; align-items: center; justify-content: center;}
+.titulo-p2 { font-size: 80px; display: flex; color: white; justify-content: center;}
+
+.sub-titulo-p1 { width: 100%; font-size: 50px; display: flex; flex-flow: wrap; color: #06402b; justify-content: center; margin-top: 3%;}
+
+.caja-fotos-slide2 { width: 100%; display: flex; flex-flow: wrap; justify-content: space-around; align-items: center; margin-top: 2%;}
+
+.subcaja-f-slide1 { width: 100%; display: flex; justify-content: center; height: 100%; margin-bottom: 10%; align-items: center;}
+.subcaja-f-slide2 { width: 100%; display: flex; flex-flow: wrap; align-items: center; justify-content: space-evenly; height: 100%;}
+
+.texto-p2 { width: 30%; padding-right: 20px; font-size: 25px; margin-bottom: 10%;}
+
+.foto-vinilo {
+  width: 80%;
+  max-width: 300px;
+}
+.foto-p2 { width: 55%; margin-bottom: 10%; border-radius: 15px;}
+.foto-p3 { width: 60%; margin-bottom: 10%; border-radius: 15px;}
+
+/* Tercera Slide */
+
+.caja-p3 { width: 100%; height: 100%; border-bottom: solid 1px rgb(253, 237, 219); background-color: #06402b;}
+
+.caja-slide-p3 { display: flex; justify-content: center; flex-flow: wrap; padding-top: 20px;}
+.caja-slide-p4 {
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+.titulo-p3 { color:white; font-size: 60px;}
+
+.web-inicio {width: 70%; margin-top: 10px; border-radius: 15px; margin-bottom: 10%; border: 1px solid rgb(253, 237, 219);}
+.movil-inicio {width: 15%; margin-top: 10px; border-radius: 15px; margin-bottom: 10%; border: 1px solid rgb(253, 237, 219);}
+
+/* Cuarta Slide */
+
+.caja-p4 { width: 100%; height: 100%; border-bottom: solid 1px rgb(253, 237, 219); display: flex; flex-flow: wrap;}
+.titulo-p4 { font-size: 70px; padding-top: 20px; color: #06402b; width: 100%;}
+
+.caja-slide-p5 { width: 85%; display: flex; flex-flow: wrap; align-items: center; margin-right: 0;}
+.caja-slide-p6 { width: auto; display: flex; justify-content: flex-start; align-items: center; margin-left: -400px; margin-bottom: 100px;} 
+
+.texto-djo { font-size: 30px; margin-left: 15%; width: 100%; height: 20%; display: flex; justify-content: flex-start; align-items: center; margin-bottom: 5%;}
+.djo { width: 500px; height: auto; display: block;}
+
+.vinilo {width: 8%; margin-right: 5%;}
+
+/* Quinta Slide*/
+
+.caja-p5 { width: 100%; height: 100%; border-bottom: solid 1px rgb(253, 237, 219); background-color: #06402b; display: flex; flex-flow: wrap;}
+.titulo-p5 { font-size: 70px; padding-top: 20px; color: white; width: 100%;}
+
+.caja-wireframe { display: flex; flex-flow: wrap; width: 100%; margin-top: -100px;}
+.fotos-wireframe { width: 40%; display: flex; flex-flow: wrap; justify-content: space-evenly; align-items: center; }
+
+.caja-texto-wireframe { width: 60%; display: flex; flex-flow: wrap;}
+
+.wireframe-p { width: 100%; font-size: 40px; color: white; display: flex; align-items: center; justify-content: center; padding-left: 50px;}
+.wireframe-p1 { width: 100%; font-size: 40px; color: white; margin-left: 10%;}
+.wireframe-f-1 { width: 60%; margin-top: 10px; border-radius: 15px; margin-bottom: 10%; border: 1px solid black;}
+.wireframe-f-2 { width: 35%; margin-top: 10px; border-radius: 15px; margin-bottom: 10%; border: 1px solid black;}
+
+/* Sexta Slide */
+
+.caja-p6 { display: flex; width: 100%; height: 100%; justify-content: center;}
+.link-pagina { display: flex; width: 60%; align-items: center; justify-content: center;}
+
+.pagina { background-color: #06402b; color: white; border-radius: 15px; font-size: 40px; width: 50%; height: 25%;
+    display: flex; align-items: center; justify-content: center;} 
+
+.pagina:hover{ background-color: #06402b; transition: background-color 0.3s ease;}
+
+/* Codigo slider */
+
+.control-prev, .control-next { position: absolute; top: 50%; transform: translateY(-50%); background-color: #06402b;
+    border: none; color: #fff; font-size: 2em; cursor: pointer; padding: 12px; border-radius: 15px;}
+
+.control-prev { left: 15px;}
+.control-next {right: 15px;}
+
+.control-prev:hover, .control-next:hover { background-color: #06402b; transition: background-color 0.5s ease;}
+
+.slider { position: relative; width: 100%; height: 100vh; overflow: hidden;}
+.slides { display: flex; transition: transform 0.6s ease-in-out;}
+.slide { min-width: 100%; height: 100vh; display: flex; align-items: center; justify-content: center;
+    flex-direction: column; text-align: center; }
+
+  @media (min-width: 1024px) {
+  .foto-vinilo {
+    max-width: 500px;
+  }
+}
+
+  @media (max-width: 768px) {
+    .titulo-p1, .titulo-p2, .titulo-p3, .titulo-p5 {
+      font-size: 40px;
+      text-align: center;
+      align-items: center;
+    }
+
+    .titulo-p3 {
+  margin-bottom: 30px;
+}
+
+
+  .titulo-p4 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+    .texto-p1, .wireframe-p, .wireframe-p1 {
+      font-size: 18px !important;
+      text-align: center;
+      padding-left: 0;
+      margin-left: 0;
+    }
+
+    .web-inicio, .wireframe-f-1, .wireframe-f-2, .djo, .foto-p1 {
+      width: 90% !important;
+      margin: 10px auto;
+      display: block;
+    }
+
+    .caja-wireframe, .caja-slide-p5, .fotos-wireframe, .subcaja-f-slide1 {
+      flex-direction: column !important;
+      align-items: center !important;
+    }
+
+  .caja-slide-p5 {
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+.bullets-diseno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .texto-djo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #06402b;
+    gap: 12px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+
+  .vinilo {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+
+.djo {
+  width: 120px;
+  margin-top: 0px;
+}
+
+  .caja-slide-p6 {
+    margin-top: 0px !important;
+    margin-bottom: 20px !important;
+    display: flex;
+    justify-content: center !important;
+  }
+
+.caja-slide-p4, {
+      flex-direction: column !important;
+      align-items: center !important;
+    }
+
+    .pagina {
+      width: 90% !important;
+      font-size: 24px;
+    }
+
+    .slide .caja-p5 > div[style*="grid-template-columns"] {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+    }
+
+    .slide .caja-p5 > div[style*="grid-template-columns"] > div {
+      width: 90% !important;
+      margin: 0 auto;
+    }
+
+    .slide ul {
+      font-size: 16px;
+    }
+
+    .logo-p {
+      width: 40%;
+    }
+
+    .texto-djo {
+      font-size: 18px;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .vinilo {
+      width: 30px;
+      margin-right: 10px;
+    }
+
+    .caja-slide-p6 {
+      justify-content: center !important;
+      margin-left: 0 !important;
+    }
+
+    .link-pagina {
+      width: 100% !important;
+    }
+
+    .caja-p2 {
+      flex-direction: column;
+      text-align: center;
+    }
+
+.web-inicio,
+.movil-inicio {
+  max-height: 40vh;
+  width: auto;
+  display: block;
+  margin: 0 auto 20px auto;
+  object-fit: contain;
+}
+.caja-slide-p4 {
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+.movil-inicio {
+  height: auto;
+  max-height: 40vh;
+  width: auto;
+  border-radius: 10px;
+  border: 1px solid white;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+.fotos-wireframe {
+  width: 100% !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.wireframe-f-1,
+.wireframe-f-2 {
+  width: 90% !important;
+  max-width: 320px;
+  height: auto;
+  margin: 20px auto 30px auto !important;
+  padding: 0 !important;
+  border: none !important;
+  display: block;
+  object-fit: contain;
+}
+
+.wireframe-f-2 {
+  margin-top: 40px !important;
+}
+
+.wireframe-f-2 ~ .wireframe-p,
+.wireframe-f-2 ~ .wireframe-p1 {
+  margin-top: 20px !important;
+}
+
+.control-prev, .control-next {
+    z-index: 10;
+  }
+
+  .fotos-wireframe {
+    padding: 0 40px; 
+    box-sizing: border-box;
+  }
+
+.wireframe-p {
+  margin-bottom: 10px !important;
+  font-size: 20px !important;
+}
+
+.wireframe-p1 {
+  margin-bottom: 10px !important;
+  padding: 0 20px;
+  font-size: 18px !important;
+}
+
+.caja-wireframe .caja-texto-wireframe {
+  margin-top: 40px !important;
+}
+
+.fotos-wireframe {
+  margin-top: 10px !important;
+}
+
+.caja-wireframe {
+  margin-top: 0 !important;
+}
+
+.caja-texto-wireframe {
+  margin-top: 30px !important;
+}
+
+.slide:nth-of-type(6) .caja-p5 {
+  justify-content: flex-start !important;
+  padding-top: 10px !important;
+}
+
+.slide:nth-of-type(6) .caja-wireframe {
+  margin-top: -40px !important;
+}
+
+  .slide:nth-of-type(8) .caja-p5 > div[style] {
+    grid-template-columns: none !important;
+    display: block !important;
+  }
+
+.slide:nth-of-type(8) .caja-p5 {
+  padding-bottom: 12px !important;
+}
+
+.slide:nth-of-type(8) .caja-p5 > div[style] > div {
+  width: 75% !important;
+  padding: 12px !important;
+  font-size: 14px !important;
+  line-height: 1.3 !important;
+}
+
+.slide:nth-of-type(8) .caja-p5 {
+    padding-top: 12px !important;
+    padding-bottom: 0 !important;
+    gap: 6px !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+  }
+
+  .slide:nth-of-type(8) .caja-p5 > div[style*="grid-template-columns"] {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 8px !important;
+  }
+
+  .slide:nth-of-type(8) .caja-p5 > div[style*="grid-template-columns"] > div {
+    width: 90% !important;
+    padding: 10px !important;
+    font-size: 13px !important;
+    line-height: 1.2 !important;
+    min-height: auto !important;
+  }
+
+  .slide:nth-of-type(8) .caja-p5 > div:last-child h2 {
+    font-size: 16px !important;
+    margin-top: 10px !important;
+  }
+}
+
+</style>
+</head>
+<body>
+  <section>
+    <div id="presentationSlider" class="slider">
+      <div class="slides">
+        <div class="slide active" style="display: block;">
+          <div class="caja-p1">
+  <div class="contenido-p1">
+    <div class="logo-p">
+      <img src="ICONO.png" alt="Logo">
+    </div>
+    <h1 class="titulo-p1">+Records</h1>
+    <div class="subcaja-p3">
+      <p class="texto-p1">Martina Serra</p>
+      <p class="texto-p1">Profesor: Wenceslao Zavala</p>
+      <p class="texto-p1">Contenidos y Creatividad I</p>
+    </div>
+  </div>
+</div>
+        </div>
+<div class="slide" style="display: none;">
+  <div class="caja-p2">
+    <div class="titulo-p2">
+    <h1> Sobre +Records </h1>
+  </div>
+  </div>
+</div>
+<div class="slide" style="display: none;">
+  <div style="width: 100%; height: 100vh; display: flex; flex-direction: column;">
+    <div style="padding-top: 40px; text-align: center;">
+      <h2 style="font-size: 50px; color: #06402b;">Venta de vinilos</h2>
+    </div>
+    <div style="flex-grow: 1; display: flex; justify-content: center; align-items: center;">
+      <img src="vinilos1.png" class="foto-vinilo">
+    </div>
+  </div>
+</div>
+
+<div class="slide" style="display: none;">
+  <div class="caja-p3">
+    <div class="caja-slide-p3">
+      <h1 class="titulo-p3"> Páginas de inicio Escritorio y Móvil </h1>
+    </div>
+    <div class="caja-slide-p4">
+      <img class="web-inicio" src="web-inicio.jpeg">
+      <img class="movil-inicio" src="movil-inicio.jpeg">
+    </div>
+  </div>
+</div>
+<div class="slide" style="display: none;">
+  <div class="caja-p4">
+  <h1 class="titulo-p4"> Diseño </h1>
+  <div class="caja-slide-p5">
+    <div class="bullets-diseno">
+      <p class="texto-djo">
+        <img class="vinilo" src="vinilo.png">
+        Minimalista y limpio
+      </p>
+      <p class="texto-djo">
+        <img class="vinilo" src="vinilo.png">
+        Jerarquía clara
+      </p>
+      <p class="texto-djo">
+        <img class="vinilo" src="vinilo.png">
+        Enfoque visual en el producto
+      </p>
+    </div>
+  </div>
+  <div class="caja-slide-p6">
+    <img class="djo" src="djo.png">
+  </div>
+</div>
+</div>
+<!-- Slide: Wireframe Escritorio -->
+<div class="slide" style="display: none;">
+  <div class="caja-p5">
+    <h1 class="titulo-p5"> Wireframe y evolución </h1>
+    <div class="caja-wireframe">
+      <div class="caja-texto-wireframe">
+        <p class="wireframe-p"> Wireframe de Escritorio </p>
+        <p class="wireframe-p1"> Boceto inicial de la web, el cual fue evolucionando con la cursada </p>
+      </div>
+      <div class="fotos-wireframe">
+        <img class="wireframe-f-1" src="Wireframe INDEX.png">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Slide: Wireframe Móvil -->
+<div class="slide" style="display: none;">
+  <div class="caja-p5">
+    <h1 class="titulo-p5"> Wireframe y evolución </h1>
+    <div class="caja-wireframe">
+      <div class="caja-texto-wireframe">
+        <p class="wireframe-p"> Wireframe de Móvil </p>
+        <p class="wireframe-p1"> Boceto inicial de la web, el cual fue evolucionando con la cursada </p>
+      </div>
+      <div class="fotos-wireframe">
+        <img class="wireframe-f-2" src="Wireframe CELULAR.jpeg">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="slide" style="display: none;">
+  <div class="caja-p5" style="justify-content: flex-start; padding-top: 20px;">
+    <h1 class="titulo-p5" style="margin-bottom: 20px;">Presupuesto del Proyecto</h1>
+    
+    <div style="width: 85%; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; color: white; font-size: 18px;">
+      
+      <!-- Caja 1 -->
+      <div style="background-color: rgba(255,255,255,0.08); border-radius: 15px; padding: 15px; min-height: 170px; display: flex; flex-direction: column; justify-content: center;">
+        <h2 style="font-size: 20px; margin-bottom: 8px; text-align: center;">Diseño de Información</h2>
+        <ul style="line-height: 1.4; list-style: none; padding: 0; text-align: center;">
+          <li>Investigación – <strong>$10.000</strong></li>
+          <li>Wireframes – <strong>$8.000</strong></li>
+          <li>SEO (contenido) – <strong>$12.000</strong></li>
+          <li><strong>Total: $30.000</strong></li>
+        </ul>
+      </div>
+
+      <!-- Caja 2 -->
+      <div style="background-color: rgba(255,255,255,0.08); border-radius: 15px; padding: 15px; min-height: 170px; display: flex; flex-direction: column; justify-content: center;">
+        <h2 style="font-size: 20px; margin-bottom: 8px; text-align: center;">Desarrollo Web</h2>
+        <ul style="line-height: 1.4; list-style: none; padding: 0; text-align: center;">
+          <li>HTML y CSS – <strong>$12.000</strong></li>
+          <li>JavaScript – <strong>$10.000</strong></li>
+          <li>Optimización – <strong>$6.000</strong></li>
+          <li><strong>Total: $28.000</strong></li>
+        </ul>
+      </div>
+
+      <!-- Caja 3 -->
+      <div style="background-color: rgba(255,255,255,0.08); border-radius: 15px; padding: 15px; min-height: 170px; display: flex; flex-direction: column; justify-content: center;">
+        <h2 style="font-size: 20px; margin-bottom: 8px; text-align: center;">Diseño Visual (UI/UX)</h2>
+        <ul style="line-height: 1.4; list-style: none; padding: 0; text-align: center;">
+          <li>Identidad visual – <strong>$15.000</strong></li>
+          <li>Prototipado – <strong>$8.000</strong></li>
+          <li>Diseño responsivo – <strong>$10.000</strong></li>
+          <li><strong>Total: $33.000</strong></li>
+        </ul>
+      </div>
+
+      <!-- Caja 4 -->
+      <div style="background-color: rgba(255,255,255,0.08); border-radius: 15px; padding: 15px; min-height: 170px; display: flex; flex-direction: column; justify-content: center;">
+        <h2 style="font-size: 20px; margin-bottom: 8px; text-align: center;">Hosting y Publicación</h2>
+        <ul style="line-height: 1.4; list-style: none; padding: 0; text-align: center;">
+          <li>Dominio – <strong>$5.500/año</strong></li>
+          <li>Hosting – <strong>$799/mes</strong></li>
+          <li><strong>Total anual: $15.088</strong></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Total final centrado abajo -->
+    <div style="width: 100%; margin-top: 30px; text-align: center;">
+      <h2 style="color: white; font-size: 24px;">TOTAL ESTIMADO: $106.088</h2>
+    </div>
+  </div>
+</div>
+
+<div class="slide" style="display: none;">
+  <div class="caja-p6">
+    <div class="link-pagina">
+      <a class="pagina" href="https://mserra2005.github.io/Records/">
+        <h1> Página Web </h1>
+      </a>
+    </div>
+  </div>
+</div>
+<button class="control-prev" id="prev">❮</button>
+<button class="control-next" id="next">❯</button>
+      </div>
+    </div>
+  </section>
+  <script>
+
+        let currentSlide = 0;
+         
+        function showSlide(index) {
+          const slides = document.querySelectorAll('.slide');
+          const totalSlides = slides.length;
+         
+          if (index >= totalSlides) {
+            currentSlide = 0;
+          } else if (index < 0) {
+            currentSlide = totalSlides - 1;
+          } else {
+            currentSlide = index;
+          }
+         
+          slides.forEach((slide, i) => {
+            slide.style.display = i === currentSlide ? 'block' : 'none';
+          });
+        }
+         
+        function nextSlide() {
+          showSlide(currentSlide + 1);
+        }
+         
+        function prevSlide() {
+          showSlide(currentSlide - 1);
+        }
+         
+        // Cambia automáticamente de diapositiva cada 3 segundos (ajusta según tus necesidades)
+        document.getElementById('prev').addEventListener('click', prevSlide);
+        document.getElementById('next').addEventListener('click', nextSlide);
+         
+        // Muestra la primera diapositiva al cargar la página
+        showSlide(currentSlide);  
+    
+  </script>
+  <script>
+    'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh-oh'},{'server':'p3plzcpnl505977'},{'dcenter':'p3'},{'cp_id':'8072995'},{'cp_cache':''},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.
+  </script>
+  <script src="https://img1.wsimg.com/traffic-assets/js/tccl.min.js"></script>
+</body>
+</html>
